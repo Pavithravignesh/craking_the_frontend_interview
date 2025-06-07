@@ -1,4 +1,5 @@
 // Handler function for button click
+// const now = new Date().toLocaleTimeString();
 function handleClick() {
   const now = new Date().toLocaleTimeString();
   document.getElementById(
@@ -11,12 +12,14 @@ function handleClick() {
 function throttle(func, delay) {
   let lastCall = 0;
   console.log(lastCall);
+
+  // how i can make this function will be reachable for once for every one second?
   return function (...args) {
     const now = Date.now();
     if (now - lastCall >= delay) {
       lastCall = now;
       func.apply(this, args);
-    }
+    }   
   };
 }
 
