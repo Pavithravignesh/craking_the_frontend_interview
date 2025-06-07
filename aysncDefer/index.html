@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>defer vs async Demo (with DOM)</title>
+
+    <!-- Async script (may run before DOM is ready) -->
+    <script src="./src/async-script.js" async></script>
+
+    <!-- Defer script (runs after DOM is parsed) -->
+    <script src="./src/defer-script.js" defer></script>
+  </head>
+  <body>
+    <h1 id="heading">Hello, World!</h1>
+    <p>Check the console to see DOM access behavior.</p>
+  </body>
+</html>
