@@ -28,4 +28,6 @@ function betterActionFn(fn, delay) {
   };
 }
 
-window.addEventListener("resize", betterActionFn(actionFn, 3000));
+const throttleFn = betterActionFn(actionFn, 3000);
+
+window.addEventListener("resize", throttleFn);
