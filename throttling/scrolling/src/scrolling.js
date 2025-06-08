@@ -27,4 +27,6 @@ function betterActionFn(fn, delay) {
   };
 }
 
-window.addEventListener("scroll", betterActionFn(actionFn, 5000));
+const throttleFn = betterActionFn(actionFn, 5000);
+
+window.addEventListener("scroll", throttleFn);
