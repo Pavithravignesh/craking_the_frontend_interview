@@ -8,7 +8,7 @@ function betterFn(fn, delay) {
   let flag = true;
   return () => {
     // under contrain only we can make a call to doFetch
-    if (flag) {
+    if (flag) { // for the second click will be false from the current scope, here's aren't using things from closure!
       flag = false;
       let context = this,
         argu = arguments;
