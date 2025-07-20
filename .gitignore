@@ -1,3 +1,6 @@
 /throttling/loadsh/parcel-cache
 /throttling/loadsh/dist
 /throttling/loadsh/node_modules
+/debounce/loadsh/parcel-cache
+/debounce/loadsh/dist
+/debounce/loadsh/node_modules
