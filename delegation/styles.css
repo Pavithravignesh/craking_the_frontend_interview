@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+#parent {
+  border: 3px solid black;
+  padding: 5px;
+  width: 170px;
+  height: 93px;
+}
+
+.child {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.child:hover {
+  cursor: pointer;
+}
