@@ -20,5 +20,11 @@ Function.prototype.myBind = function (...argu) {
   };
 };
 
-const returnedMyBind = printName.myBind(obj, "city", "town", "country");
-console.log(returnedMyBind("postcode"));
+const returnedMyBind = printName.myBind(
+  obj,
+  "city",
+  "town",
+  "country"
+)("postcode");
+console.log(returnedMyBind);
+// console.log(returnedMyBind("postcode"));
