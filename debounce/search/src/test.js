@@ -1,19 +1,19 @@
 const searchTextNode = document.getElementById("searchText");
 
-const magicFnVar = magicFn(debounce, 300);
+const magicFnVar = magicFn(debounce, 3000);
 
 function magicFn(fn, delay) {
   // i should clear the timeout
-  let timer;
+  let timer = null;
   console.log(timer);
   // return a timeout
   return () => {
-    let context = this,
-      argu = arguments;
-    clearTimeout(timer);
+    let context = this;
+    // argu = arguments;
+    clearTimeout(timer); // if it doesn't clears then every click will be executes the setTimeout()
     timer = setTimeout(() => {
       // make the debounce fn as it belongs here,
-      fn.apply(context, argu);
+      fn.apply(context);
     }, delay);
   };
 }

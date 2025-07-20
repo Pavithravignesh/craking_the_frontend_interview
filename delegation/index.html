@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="parent">
+      <li class="child" id="one" name="one">one</li>
+      <li class="child" id="two" name="two">two</li>
+      <li class="child" id="three" name="three">three</li>
+      <div class="">
+        <input type="text" name="name" id="name" data-muthuramalingam />
+        <!-- irrespective to it's deep in the DOM tree it'll be get you sure that everything is connect and the cycle will be capturing and trikles -->
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

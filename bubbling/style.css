@@ -1,0 +1,19 @@
+.grand-parent {
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.parent {
+  width: 35px;
+  height: 35px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.child {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+}
